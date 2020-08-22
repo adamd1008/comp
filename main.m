@@ -1,11 +1,11 @@
 thr = -18; % dB
 ratio = 10; % ratio:1
-knee = 0; % dB
-attMs = 0.03;
-holdMs = 50;
-relMs = 250;
+knee = 4; % dB
+attMs = 0.1;
+holdMs = 0;
+relMs = 50;
 rmsMs = 0;
-wavBaseName = "test";
+wavBaseName = "../pydsp/data/Baka Mitai";
 wavFile = sprintf("%s%s", wavBaseName, ".wav");
 
 [n, fs] = audioread(wavFile);
